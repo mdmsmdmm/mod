@@ -152,13 +152,4 @@ class ILYMod(loader.Module):
             disable_security=True,
         )
 
-    @loader.command(ru_doc="Отправить гейскую анимацию сердец")
-    async def ilygay(self, message: Message):
-        """Send message with animated hearts (gay)"""
-        await self.ily_handler_gay(
-            message,
-            utils.get_args_raw(message) or Чел ты... Гей!",
-            inline=False,
-        )
-
-
+    
